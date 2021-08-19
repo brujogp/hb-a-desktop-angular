@@ -1,0 +1,47 @@
+<section class="animate__animated animate__fadeIn localoca" id="localoca">
+    <div class="main-container">
+        <div class="container-load-indicator sections-container">
+            <div *ngIf="!isLoad" #section>
+                <div class="hb-section-item animate__animated animate__fadeIn" *ngFor="let hbSection of sections"
+                     #buttonSection
+                     (click)="onClickSection(hbSection, buttonSection, section)">
+                    <img class="icon-section" [src]="hbSection.iconURL" [alt]="hbSection.name">
+                    <p>{{hbSection.name}}</p>
+                </div>
+            </div>
+
+            <mat-progress-bar mode="indeterminate" [color]="'warn'"
+                              *ngIf="isLoad"></mat-progress-bar>
+        </div>
+        <div class="subsections-container" *ngIf="childSubsectionsList" #subsection>
+            <div *ngFor="let hbSubsection of childSubsectionsList; let i = index" [attr.data-index]="i"
+                 class="hb-subsection-item animate__animated animate__fadeIn animate__faster" #buttonSubsection
+                 (click)="onClickSubsection(i, buttonSubsection, subsection)">
+                <img class="icon-section" [src]="hbSubsection.iconURL" [alt]="hbSubsection.name">
+                <p>{{hbSubsection.name}}</p>
+            </div>
+        </div>
+
+        <div class="items-background">
+            <!-- Para la lista de íconos a elegir -->
+            <div class="items-container" *ngIf="genericList">
+                <div class="hb-item" *ngFor="let item of genericList" #buttonItem
+                     (click)="onClickItem(item, buttonItem)">
+                    <img [src]="item.iconImageURL | replace : '#' : ''"/>
+                </div>
+            </div>
+
+
+            <!-- Para la descripción -->
+            <div [@descriptionHBAnim]="!triggered" class="hb-description"
+                 *ngIf="itemClicked">
+                <p class="title-item">{{itemClicked.name}}</p>
+                <hr>
+                <div class="description-item for-img"
+                     [innerHTML]="itemClicked.description | surrondWithTag : 'img'">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

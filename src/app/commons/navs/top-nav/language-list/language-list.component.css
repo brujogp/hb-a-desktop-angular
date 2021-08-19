@@ -1,0 +1,15 @@
+.container {
+    padding: 6px 0;
+}
+
+.languages-list {
+    text-align: center;
+}
+
+.languages-list button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 6px 0;
+}

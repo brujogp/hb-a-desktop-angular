@@ -1,0 +1,30 @@
+<div *ngIf="!redirect">
+        <div *ngIf="statePlatform else maintaining">
+            <app-top-nav></app-top-nav>
+            <div>
+                <div [@animChildrenApp]="outletVerify(salidaPage)">
+                    <router-outlet #salidaPage="outlet"></router-outlet>
+                </div>
+
+                <app-bottom-menu [@menuAnim]="outletVerify(salidaPage)" class="app-menu"></app-bottom-menu>
+                <div [@leaveEnterDiv]="outletVerify(salidaPage)" class="separator-vertical-div"></div>
+                <img [@heroAnimation]="outletVerify(salidaPage)" class="heroes" src="assets/heroes.svg"
+                     alt="background">
+            </div>
+        </div>
+</div>
+
+<ng-template #maintaining>
+
+    <div class="maintaining">
+        <div class="i-container">
+            <i class="fas fa-tools"></i>
+        </div>
+
+        <h3>Ya volvemos :D</h3>
+        <p>En este momento estamos en mantenimiento. Sentimos cualquier inconveniente, pero las biblias también
+            descansan.
+            Por favor vuelve después para continuar disfrutando de Heroclix Bible.
+        </p>
+    </div>
+</ng-template>

@@ -1,0 +1,117 @@
+/* color palett */
+:root {
+    /* colors for home page */
+    --home-page-primary-color-dark: #0a0f28;
+    --home-page-primary-color-light: #829cbc;
+
+    --home-page-button-color-one: #374b66;
+    --home-page-button-color-two: #3d5270;
+    --home-page-button-color-three: #31425e;
+
+    /* colors for application page */
+    --heroclixbible-app-primary-color: #ed254e;
+    --heroclixbible-app-secondary-color: #9d7fa1;
+    --heroclixbible-app-primary-color-light: #ee8b98;
+
+    --heroclixbible-app-accentuation-color: #b86185;
+
+    /* global colors */
+    --placeholder-color: #9c888c;
+    --text-contrast: #bebebe;
+}
+
+/* general styles */
+*::-webkit-scrollbar {
+    max-width: .7rem;
+    max-height: .7rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #232933;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-color: #969ca9;
+    border-radius: 12px;
+    border: 3px solid #232933;
+}
+
+html {
+    box-sizing: border-box;
+    background-image: url("assets/background-images/background.png");
+    background-color: white;
+    background-repeat: repeat;
+    background-size: 35rem;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+html:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    top: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: #969ca9 #232933; /* scroll thumb and track */
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #232933; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #232933; /* color of the scroll thumb */
+    border-radius: 12px; /* roundness of the scroll thumb */
+    border: 3px solid #969ca9; /* creates padding around scroll thumb */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'bebas neue', cursive;
+
+}
+
+h2 {
+    font-family: 'fjalla one', sans-serif;
+}
+
+h3 {
+    font-family: 'roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'bangers', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'roboto', sans-serif;
+}
+
+/*Index Styles*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

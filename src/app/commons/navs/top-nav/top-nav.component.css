@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    z-index: 99999;
+}
+
+.version {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.site-name {
+    text-decoration: none;
+    margin: auto 0 auto 0;
+}
+
+.site-name h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    padding-left: 1rem;
+    transition: .3s;
+}
+
+.site-name h1:hover {
+    color: gray;
+}
+
+.version-container {
+    height: 100%;
+    position: relative;
+}
+
+.current-version {
+    color: white;
+    margin: .5rem 0 0 .3rem;
+}
+
+.current-version:hover {
+    cursor: pointer;
+}
+
+.current-version p {
+    margin: 0;
+    font-family: 'bebas neue', cursive;
+
+}
+
+.language-options {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 1rem;
+    position: relative;
+    z-index: 9999 !important;
+}
+
+.language-options i {
+    font-size: 3rem;
+    color: white;
+    transition: .3s;
+}
+
+.language-options i:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+app-language-list {
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    width: 6rem;
+    background-color: black;
+}
+
+app-version-list {
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+}

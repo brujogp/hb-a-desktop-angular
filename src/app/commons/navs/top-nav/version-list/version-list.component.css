@@ -1,0 +1,20 @@
+.versions-list {
+    background-color: #242a33;
+    padding: 1rem;
+}
+
+.versions-list button {
+    background: none;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.versions-list button:first-of-type {
+    margin-top: 0;
+}
+
+.versions-list button:hover {
+    cursor: pointer;
+}

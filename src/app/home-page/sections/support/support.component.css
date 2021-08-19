@@ -1,0 +1,74 @@
+@import '~ngx-sharebuttons/themes/circles/circles-dark-theme.css';
+
+share-buttons {
+    max-width: 18rem;
+    margin-right: 2rem;
+}
+
+.section {
+    max-width: 40%;
+}
+
+.section {
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.section h2 {
+    color: #667996;
+    font-size: 2.8rem;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.section h2:after {
+    content: '';
+    position: absolute;
+    color: white;
+    border: 1px solid white;
+    width: 30rem;
+    bottom: -1rem;
+    left: 0;
+}
+
+.section h3 {
+    color: #bebebe;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.description-section {
+    color: white;
+    margin-top: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-left: 10px;
+}
+
+.buttons-container {
+    margin: 3rem auto 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+}
+
+.buttons-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.paypal {
+    margin-left: 2rem;
+}
+
+
+.donate-image {
+    width: 11rem;
+}

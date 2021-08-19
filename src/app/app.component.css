@@ -1,0 +1,72 @@
+img {
+    width: 100%;
+}
+
+.heroes {
+    height: 35rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    z-index: -2;
+    width: auto !important;
+}
+
+app-bottom-menu {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+
+}
+
+.separator-vertical-div {
+    background-color: #272e53;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 55%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*Maintaining Page*/
+.maintaining {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.maintaining .i-container {
+    background-color: black;
+    border-radius: 15rem;
+    margin: 0 auto;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    width: 16rem;
+}
+
+.maintaining .i-container i {
+    text-align: center;
+    margin: auto;
+
+}
+
+.maintaining i {
+    font-size: 8rem;
+}
+
+.maintaining h3 {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.maintaining p {
+    max-width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}

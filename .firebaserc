@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "heroclixbiblemobile",
+    "heroclixbiblemobile": "heroclixbiblemobile",
+    "heroclixbibledesktop": "heroclixbible",
+    "heroclixbibletest": "heroclix-bible-test"
+  }
+}

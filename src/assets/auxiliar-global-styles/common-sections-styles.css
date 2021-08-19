@@ -1,0 +1,56 @@
+.section {
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+
+.section h2 {
+    color: #667996;
+    font-size: 2.8rem;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.section h2:after {
+    content: '';
+    position: absolute;
+    color: white;
+    border: 1px solid white;
+    width: 30rem;
+    bottom: -1rem;
+    left: 0;
+}
+
+.section h3 {
+    color: #bebebe;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+
+.buttons-container a {
+    /*    background-color: #0a0f28;*/
+    background-color: gray;
+    opacity: .2;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 2rem;
+    display: inline-block;
+    margin-right: 5rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.buttons-container a:hover {
+    color: black;
+    background-color: white;
+}
+
+.buttons-container a:last-of-type {
+    margin-right: 0;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+}

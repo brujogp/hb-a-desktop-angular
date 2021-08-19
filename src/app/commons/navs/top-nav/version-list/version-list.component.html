@@ -1,0 +1,4 @@
+<div class="versions-list" *ngIf="versionsList">
+    <button (click)="clickedVersion(i)" *ngFor="let version of versionsList; let i = index"
+            [attr.data-index]="i">{{version.year}}</button>
+</div>

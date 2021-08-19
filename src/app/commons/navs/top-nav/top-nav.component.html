@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="version">
+        <a routerLink="" class="site-name"><h1>Heroclix Bible</h1></a>
+
+        <div class="version-container"
+             (mouseenter)="showHiddenListVersionsList()" (mouseleave)="showHiddenListVersionsList()">
+
+            <div class="current-version">
+                <p *ngIf="currentVersion">{{ currentVersion }}</p>
+            </div>
+
+            <app-version-list [versionsListFromParent]="versionsList"
+                              (versionChose)="versionChose($event)"
+                              class="animate__animated animate__fadeIn animate__faster"
+                              *ngIf="showListVersions"></app-version-list>
+        </div>
+    </div>
+
+    <div class="language-options animate__animated animate__fadeIn animate__faster"
+         (mouseenter)="showHiddenListLanguage()" (mouseleave)="showHiddenListLanguage()">
+        <i class="fas fa-language" (click)="showHiddenListLanguage()"></i>
+        <app-language-list class="animate__animated animate__fadeIn animate__faster"
+                           (setVisibility)="showHiddenListLanguage()" [stateListLanguage]="showListLanguage"
+                           *ngIf="showListLanguage"></app-language-list>
+    </div>
+</div>

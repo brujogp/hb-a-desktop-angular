@@ -1,0 +1,36 @@
+<div class="animate__animated animate__fadeIn">
+    <section class="section">
+        <h2>¿Te gusta el proyecto?</h2>
+        <p class="description-section">Si te gusta el proyecto, una forma de ayudarnos es pasando la voz y compartirlo
+            con alguien que creas que le pueda interesar :D<br><br>
+            Además de eso, debido a que esta aplicación es mantenida por sus creadores, ayudarías mucho si donaras
+            cualquier monto mediante PayPal.</p>
+        <div class="buttons-container">
+
+            <form action="https://www.paypal.com/donate" method="post" target="_top" class="paypal">
+                <input type="hidden" name="business" value="RFX64LZ624QQ4"/>
+                <input type="hidden" name="item_name"
+                       value="Con tu donativo, permites que Heroclix Bible siga vivo y en expansión."/>
+                <input type="hidden" name="currency_code" value="MXN"/>
+                <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_LG.gif" border="0"
+                       name="submit" title="PayPal - The safer, easier way to pay online!"
+                       alt="Donar con el botón PayPal"/>
+                <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1"
+                     class="donate-image"/>
+            </form>
+
+            <!-- <a href="#" [attr.disabled]="true">Ir a Kickstarter</a>-->
+
+            <share-buttons
+                    description="Encontré esta app en donde puedes ver todo lo relacionado con Heroclix. Te la comparto."
+                    show="5"
+                    [url]="'https://heroclixbible.com'"
+                    (opened)="sharedOpen()"
+                    (closed)="sharedClose()"></share-buttons>
+
+        </div>
+
+    </section>
+
+
+</div>

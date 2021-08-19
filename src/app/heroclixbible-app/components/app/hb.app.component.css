@@ -1,0 +1,150 @@
+.localoca {
+    z-index: 0 !important;
+    position: relative;
+}
+
+.main-container {
+    width: 98%;
+    height: 35rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    z-index: 0 !important;
+    position: relative;
+}
+
+.sections-container {
+    width: 27%;
+    background-color: #969ca9;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 100%;
+}
+
+.subsections-container {
+    background-color: #242a33;
+    text-align: center;
+    width: 20%;
+    max-height: 100%;
+    overflow-y: scroll;
+    opacity: .98;
+}
+
+.icon-section {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.hb-section-item {
+    display: flex;
+    background-color: #5b6b81;
+    margin: 1rem 2rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+    align-items: center;
+}
+
+.hb-section-item:hover {
+    background-color: #b86185;
+}
+
+.hb-section-item p {
+    font-size: 1.2rem;
+    margin: .9rem 0;
+    color: white;
+}
+
+.hb-subsection-item {
+    display: flex;
+    margin: .9rem 2rem;
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.hb-subsection-item:hover {
+    background-color: #30415d;
+}
+
+.hb-subsection-item p {
+    color: white;
+    text-align: left !important;
+}
+
+.hb-subsection-item:after {
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+
+
+.items-background {
+    background-color: #232933;
+    width: 53%;
+    height: 100%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.items-container {
+    display: flex;
+    max-width: 98%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.hb-item {
+    margin-right: 1.2rem;
+    margin-top: 2rem;
+    opacity: .3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hb-item img {
+    width: 3rem;
+}
+
+.hb-description {
+    height: 70%;
+    max-width: 98%;
+    color: white;
+}
+
+.title-item {
+    text-align: left;
+    font-size: 2.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.description-item {
+    text-align: left;
+    max-width: 98%;
+}
+
+.test-class {
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+}
+
+
+mat-progress-bar {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
